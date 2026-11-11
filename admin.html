@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#15120f">
+<title>Painel demo | Brasa Burger</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="admin.css">
+<script defer src="config.js"></script>
+<script defer src="data.js"></script>
+<script defer src="admin.js"></script>
+</head>
+<body class="admin">
+<a class="skip" href="#workspace">Pular para o conteúdo</a>
+<aside class="sidebar">
+  <a class="brand" href="#visao"><span class="brand-icon" aria-hidden="true">✦</span><span>BRASA<span class="accent">.</span><small>BURGER</small></span></a>
+  <nav id="admin-nav" aria-label="Seções do painel">
+    <a href="#visao">Visão geral</a><a href="#produtos">Produtos</a><a href="#categorias">Categorias</a><a href="#pedidos">Pedidos</a><a href="#clientes">Clientes</a><a href="#conteudos">Banners e conteúdo</a><a href="#loja">Configurações da loja</a>
+  </nav>
+  <a class="site-link" href="index.html" target="_blank" rel="noopener">Abrir site público ↗</a>
+</aside>
+<main id="workspace" tabindex="-1">
+  <header class="workspace-header">
+    <div><p class="kicker">Painel demonstrativo</p><h1 id="page-title">Visão geral</h1></div>
+    <p class="demo-note">Dados fictícios · Acesso aberto · Dados neste navegador</p>
+  </header>
+  <p id="notice" role="status" hidden></p>
+  <p id="error" role="alert" hidden></p>
+  <div id="view"></div>
+</main>
+<dialog id="editor" aria-labelledby="editor-title">
+  <form id="edit-form">
+    <header><h2 id="editor-title"></h2><button type="button" data-action="close" aria-label="Fechar edição">×</button></header>
+    <div class="edit-fields" id="edit-fields"></div>
+    <p id="edit-error" role="alert" hidden></p>
+    <footer><button type="button" data-action="close">Cancelar</button><button class="primary" type="submit">Salvar</button></footer>
+  </form>
+</dialog>
+<section id="print-order" aria-label="Comanda para impressão"></section>
+</body>
+</html>
